@@ -12,6 +12,13 @@ or
 yarn add react-native-slidable-drawer-panel
 ```
 
+## Demo
+
+![Screen Shot 2021-11-01 at 4 48 05 AM](https://user-images.githubusercontent.com/64725210/139653593-da42b8c1-a84e-4c63-8879-196280bbfb19.png)
+
+[Video Preview](https://user-images.githubusercontent.com/64725210/139651952-2b545275-9ec5-4b0e-b59b-da71890e3cdf.mp4)
+
+
 > Open Source, check the bottom of this page/file for contribution guidelines.
 
 # Example
