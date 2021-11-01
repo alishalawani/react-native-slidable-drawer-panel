@@ -1,6 +1,9 @@
 #React Native Slidable Drawer Panel
 
-Install package by running `npm i react-native-slidable-drawer-panel`
+Install package by running 
+```
+npm i react-native-slidable-drawer-panel
+```
 ### Component Props:
 
 ```
