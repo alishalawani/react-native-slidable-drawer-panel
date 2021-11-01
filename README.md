@@ -1,4 +1,4 @@
-#React Native Slidable Drawer Panel
+# React Native Slidable Drawer Panel
 
 Install package by running 
 ```
@@ -21,5 +21,7 @@ npm i react-native-slidable-drawer-panel
 	drawerOpenSpeed?: number;
 }
 ```
+
+[GIT REPO](https://github.com/alishalawani/react-native-slidable-drawer-panel)
 
 Will be updating the README with more details, stay tuned!
