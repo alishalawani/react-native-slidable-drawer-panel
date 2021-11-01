@@ -10,5 +10,17 @@ npm-debug.*
 *.orig.*
 web-build/
 
+example/node_modules
+example/.expo/
+example/dist/
+example/npm-debug.*
+example/*.jks
+example/*.p8
+example/*.p12
+example/*.key
+example/*.mobileprovision
+example/*.orig.*
+example/web-build/
+
 # macOS
 .DS_Store

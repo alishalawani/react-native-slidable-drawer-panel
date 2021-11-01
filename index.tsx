@@ -5,11 +5,9 @@ interface IDrawerProps {
 	onSlideEnd: Function;
 	event?: string;
 	backdropColor?: string;
-	drawerStyle?: Object;
 	drawerHandleColor?: string;
 	useCustomDrawer?: boolean;
 	noDrawerHandle?: boolean;
-	backgroundHeight?: number;
 	drawerHeight?: number;
 	drawerBackgroundColor?: string;
 	drawerOpenSpeed?: number;
@@ -150,10 +148,9 @@ class SlidableDrawer extends Component<IDrawerProps, IState> {
 					style={[
 						childAnimatedStyle,
 						{ height: '100%' },
-						this.props.drawerStyle,
 					]}>
 					{this.props.children && this.props.useCustomDrawer ? (
-						this.props.children
+						this.props.children //custom drawer
 					) : (
 						<View
 							style={{
@@ -164,7 +161,7 @@ class SlidableDrawer extends Component<IDrawerProps, IState> {
 									? this.props.drawerBackgroundColor
 									: '#f7f8fc',
 								height:
-									this.props.drawerHeight && this.props?.drawerHeight <= 1
+									this.props.drawerHeight && this.props.drawerHeight <= 1 && this.props.drawerHeight >= 0
 										? `${this.props.drawerHeight * 100}%`
 										: `45%`,
 								width: '100%',
@@ -173,6 +170,7 @@ class SlidableDrawer extends Component<IDrawerProps, IState> {
 								borderRadius: 15,
 								zIndex: 90000,
 							}}>
+							{/* Drawer handle */}
 							{!this.props.noDrawerHandle && (
 								<View
 									style={{
@@ -180,9 +178,11 @@ class SlidableDrawer extends Component<IDrawerProps, IState> {
 										height: 5,
 										width: 90,
 										top: 25,
+										borderRadius: 10,
 										position: 'absolute',
 									}}></View>
 							)}
+							{/* Drawer Content */}
 							{this.props.children}
 						</View>
 					)}
