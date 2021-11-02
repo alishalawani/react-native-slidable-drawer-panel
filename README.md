@@ -22,6 +22,7 @@ yarn add react-native-slidable-drawer-panel
 > Open Source, check the bottom of this page/file for contribution guidelines.
 
 # Example
+[Run on Expo Snack](https://snack.expo.dev/@lisha/slidabledrawer)
 > Basic Example: 
 ```ts
 import React, { useState } from 'react';
